@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, rgb(128, 131, 133), rgb(171, 173, 176));
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .full-calculator {
+  font-family: "Courier New", Courier, monospace;
+  width: 330px;
+  border: 1px solid black;
+  background-color: black;
+}
+body .full-calculator .display {
+  font-size: 2rem;
+  color: white;
+  min-height: 4.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0.5rem;
+}
+body .full-calculator .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .full-calculator .container .two {
+  width: 50%;
+}
+body .full-calculator .container .one {
+  width: 25%;
+}
+body .full-calculator .container .three {
+  width: 75%;
+}
+body .full-calculator .container .operation,
+body .full-calculator .container .equal {
+  background-color: #df974c;
+  color: #fff;
+}
+body .full-calculator .container .operation:hover,
+body .full-calculator .container .equal:hover {
+  background-color: #f7bc7e;
+}
+body .full-calculator .container .operation:active,
+body .full-calculator .container .equal:active {
+  background-color: #d37a1c;
+}
+body .full-calculator .container button {
+  background-color: #d8d9db;
+  height: 5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border: 0.1px solid black;
+  transition: 0.2s;
+}
+body .full-calculator .container button:hover {
+  background-color: #ebecf0;
+}
+body .full-calculator .container button:active {
+  background-color: #b3b5b8;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body .full-calculator {
+    width: 660px;
+  }
+  body .full-calculator .display {
+    font-size: 4rem;
+    min-height: 9rem;
+  }
+  body .full-calculator .container button {
+    height: 10rem;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .full-calculator {
+    width: 247.5px;
+  }
+  body .full-calculator .display {
+    font-size: 1.5rem;
+    min-height: 4.125rem;
+  }
+  body .full-calculator .container button {
+    height: 3.75rem;
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
